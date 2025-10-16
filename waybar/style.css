@@ -1,0 +1,110 @@
+@import "/home/sapo/.cache/wal/colors-waybar.css";
+
+* {
+    border: none;
+    border-radius: 13px;
+    font-family: "JetBrains Mono", mono;
+    font-size: 15px;
+}
+
+window#waybar {
+    background: transparent;
+    color: @foreground;
+}
+
+.modules-left {
+    background: @color0;
+    border-radius: 13px;
+    padding: 1px 8px;
+    margin: 5px 4px 0px 4px;
+    color: @foreground;
+}
+
+.modules-center,
+.modules-right {
+    background: @color0;
+    border-radius: 13px;
+    padding: 1px 8px;
+    margin: 5px 4px 0px 4px;
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    background: transparent;
+    color: @foreground;
+    border-radius: 13px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    background: @color1;
+    color: @foreground;
+    min-width: 34px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+    color: @color2;
+}
+
+#workspaces button:nth-child(n+6) {
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#custom-appmenuicon {
+    font-size: 23px;
+    color: @foreground;
+    padding: 1px 20px 1px 0px;
+}
+
+#custom-spotify {
+    color: @color3;
+    padding: 1px 12px;
+}
+
+#custom-spotify:hover {
+    color: @color1;
+    transition: all 0.3s ease-in-out;
+}
+
+#pulseaudio {
+    padding: 1px 6px 1px 12px;
+    color: @foreground;
+}
+
+#pulseaudio.muted {
+    color: @color1;
+}
+
+#clock {
+    padding: 1px 12px;
+    font-weight: bold;
+}
+
+#tray {
+    padding: 1px 8px;
+}
+
+#keyboard-state {
+    padding: 1px 8px;
+}
+
+#keyboard-state label.locked {
+    color: @color1;
+}
+
+#network {
+    font-family: "Font Awesome 6 Free", "Font Awesome 5 Free", "Font Awesome 6 Brands", "Font Awesome 5 Brands", "Material Icons", Fira Mono, JetBrains Mono, monospace;
+    font-weight: bold;
+}
+
+#custom-cpuhistory {
+    background: @color0;
+    border-radius: 13px;
+    padding: 1px 8px;
+    margin: 5px 4px 0px 4px;
+    color: @foreground;
+}
